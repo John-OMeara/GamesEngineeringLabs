@@ -38,6 +38,7 @@ public:
 	~Jumping();
 
 	void idle(Animation* a);
+	void climbing(Animation* a);
 };
 
 class Climbing : public State
@@ -47,4 +48,5 @@ public:
 	~Climbing();
 
 	void idle(Animation* a);
+	void jumping(Animation* a);
 };

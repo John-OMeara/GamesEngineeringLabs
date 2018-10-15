@@ -52,6 +52,16 @@ Jumping::~Jumping()
 
 void Jumping::idle(Animation * a)
 {
+	std::cout << "Jumping to Idle" << std::endl;
+	a->setCurrent(new Idle());
+	delete this;
+}
+
+void Jumping::climbing(Animation * a)
+{
+	std::cout << "Jumping to Climbing" << std::endl;
+	a->setCurrent(new Climbing());
+	delete this;
 }
 
 
@@ -60,6 +70,7 @@ CLIMBING
 */
 Climbing::Climbing()
 {
+
 }
 
 Climbing::~Climbing()
@@ -70,5 +81,12 @@ void Climbing::idle(Animation * a)
 {
 	std::cout << "Climbing to Idling" << std::endl;
 	a->setCurrent(new Idle());
+	delete this;
+}
+
+void Climbing::jumping(Animation * a)
+{
+	std::cout << "Climbing to Jumping" << std::endl;
+	a->setCurrent(new Jumping());
 	delete this;
 }
