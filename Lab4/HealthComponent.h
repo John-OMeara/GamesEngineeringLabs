@@ -6,17 +6,20 @@
 class HealthComponent : public Component
 {
 public:
-	HealthComponent() : health(100) {}
+	HealthComponent() : m_health(100) {}
 
 	int getHealth() {
-		return health;
+		return m_health;
+	}
+	void setHealth(int health) {
+		m_health = health;
 	}
 
-	void setHealth(int health) {
-		this->health = health;
+	std::string getType() {
+		return "HEALTH";
 	}
 
 private:
-	int health;
+	int m_health;
 };
 

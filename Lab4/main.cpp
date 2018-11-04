@@ -16,22 +16,20 @@ int main(int argc, char* args[])
 {
 	//Game game;
 	//game.run();
-	Entity player;
+	Entity* player = new Entity("PLAYER");
 
-	HealthComponent hc;
-	PositionComponent pc;
+	//PositionComponent pc;
 
-	player.addComponent(hc);
-	player.addComponent(pc);
+	player->addComponent(new HealthComponent());
+	//player.addComponent(pc);
 
 	HealthSystem hs;
-	PositionSystem ps;
 	hs.addEntity(player);
-	ps.addEntity(player);
+	//ps.addEntity(player);
 
 	while (true) {
 		hs.update();
-		ps.update();
+		//ps.update();
 	}
 
 	return 0;

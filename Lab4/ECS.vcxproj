@@ -135,10 +135,7 @@
     <ClInclude Include="HealthSystem.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Component.cpp" />
-    <ClCompile Include="Entity.cpp" />
     <ClCompile Include="Game.cpp" />
-    <ClCompile Include="HealthComponent.cpp" />
     <ClCompile Include="HealthSystem.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
