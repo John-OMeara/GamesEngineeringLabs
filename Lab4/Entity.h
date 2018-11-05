@@ -4,6 +4,9 @@
 
 #include "Component.h"
 #include "HealthComponent.h"
+#include "PositionComponent.h"
+#include "RenderComponent.h"
+#include "ControlComponent.h"
 
 class Entity
 {

@@ -5,8 +5,8 @@
 class Component
 {
 public:
-	Component();
-	~Component();
+	Component() {};
+	~Component() {};
 
 	virtual std::string getType() {
 		return "null";
