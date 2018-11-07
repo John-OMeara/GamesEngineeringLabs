@@ -50,9 +50,6 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Game.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="HealthSystem.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

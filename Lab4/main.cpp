@@ -5,7 +5,7 @@ ID:		C00206417
 Entity Component System
 */
 
-#include <SDL.h>
+//#include <SDL.h>
 #include <iostream>
 
 //#include "Game.h"
@@ -73,6 +73,8 @@ int main(int argc, char* args[])
 		std::cout << std::endl;
 		as.update();
 		std::cout << std::endl;
+
+		system("PAUSE");
 	}
 
 	return 0;
